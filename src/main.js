@@ -7,9 +7,9 @@ async function typeIt(elId, text) {
 
 typeIt(
   "mobileDescription",
-  "Self-taught web developer, casual gamer, husband and father of 4."
+  "Self-taught web developer, casual gamer, husband and father of 4"
 );
 typeIt(
   "desktopDescription",
-  "Self-taught web developer, casual gamer, husband and father of 4."
+  "Self-taught web developer, casual gamer, husband and father of 4"
 );
