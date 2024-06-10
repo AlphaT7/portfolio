@@ -159,6 +159,11 @@ footer {
     section {
         padding: 15px;
         border-top: 1px solid #fff;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
 
         >div:first-child {
             font-size: 30px;
@@ -182,14 +187,6 @@ footer {
             }
         }
         
-    }
-
-    section.info {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        padding-right: 25px;
     }
 }
 
@@ -262,8 +259,9 @@ footer {
     footer {
         flex-direction: column;
 
-        section.info {
-            align-items: unset;
-        }
+        section {
+            display: block;
+            width: 100%;
+        }        
     }
 }
