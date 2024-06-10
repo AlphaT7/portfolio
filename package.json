@@ -1,5 +1,7 @@
 {
+  "type": "module",
   "dependencies": {
+    "howler": "^2.2.4",
     "vite": "^5.2.11"
   },
   "devDependencies": {
