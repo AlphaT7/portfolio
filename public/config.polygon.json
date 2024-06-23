@@ -13,6 +13,8 @@
   "detectRetina": true,
   "smooth": true,
   "fpsLimit": 120,
+  "duration": 30,
+  "pauseOnBlur": true,
   "interactivity": {
     "events": {
       "onClick": {
@@ -76,13 +78,13 @@
       "consent": false,
       "distance": 10,
       "enable": true,
-      "opacity": 0.8,
+      "opacity": 1,
       "width": 0.8
     },
     "move": {
       "enable": true,
       "outModes": "bounce",
-      "speed": 1.75,
+      "speed": 3.5,
       "trail": true
     },
     "number": {
