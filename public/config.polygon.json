@@ -41,7 +41,7 @@
         "links": {
           "opacity": 0.8
         },
-        "radius": 300
+        "radius": 200
       },
       "grab": {
         "distance": 50,
@@ -68,7 +68,7 @@
   },
   "particles": {
     "color": {
-      "value": "#36b7ff"
+      "value": ["#36b7ff", "#97d9ff", "#a9e2ff", "#0d86c5"]
     },
     "links": {
       "blink": false,
@@ -82,11 +82,11 @@
     "move": {
       "enable": true,
       "outModes": "bounce",
-      "speed": 1.25,
+      "speed": 1.75,
       "trail": true
     },
     "number": {
-      "value": 150
+      "value": 250
     },
     "opacity": {
       "animation": {
@@ -108,10 +108,10 @@
   },
   "polygon": {
     "draw": {
-      "enable": true,
+      "enable": false,
       "stroke": {
         "color": "#fff",
-        "width": 0.5,
+        "width": 1.5,
         "opacity": 1
       }
     },
@@ -120,14 +120,14 @@
       "radius": 10
     },
     "position": {
-      "x": 25,
-      "y": 10
+      "x": 50,
+      "y": 50
     },
     "inline": {
       "arrangement": "equidistant"
     },
     "scale": 1.25,
     "type": "inside",
-    "url": "./jw.icon.svg"
+    "url": "./jw.icon4.svg"
   }
 }
