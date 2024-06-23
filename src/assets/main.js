@@ -9,14 +9,13 @@ function animateSVG() {
       url: "./config.polygon.json",
     })
     .then((container) => {
-      console.log("callback - tsparticles config loaded");
+      setTimeout(() => {
+        animateSVG();
+      }, 30000);
     })
     .catch((error) => {
       console.error(error);
     });
-  setTimeout(() => {
-    animateSVG();
-  }, 30000);
 }
 
 animateSVG();

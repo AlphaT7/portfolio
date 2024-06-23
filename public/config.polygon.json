@@ -84,7 +84,7 @@
     "move": {
       "enable": true,
       "outModes": "bounce",
-      "speed": 3.5,
+      "speed": 2,
       "trail": true
     },
     "number": {
