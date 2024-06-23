@@ -1,0 +1,133 @@
+{
+  "key": "multiplePolygonMasks",
+  "name": "Multiple Polygon Masks",
+  "fullScreen": { "enable": false, "zIndex": 0 },
+  "background": {
+    "color": { "value": "#333" },
+    "image": "",
+    "opacity": 0,
+    "position": "center",
+    "repeat": "no-repeat",
+    "size": "contain"
+  },
+  "detectRetina": true,
+  "smooth": true,
+  "fpsLimit": 120,
+  "interactivity": {
+    "events": {
+      "onClick": {
+        "enable": false,
+        "mode": "push"
+      },
+      "onHover": {
+        "enable": true,
+        "mode": "bubble",
+        "parallax": {
+          "enable": false,
+          "force": 1,
+          "smooth": 10
+        }
+      }
+    },
+    "modes": {
+      "bubble": {
+        "distance": 40,
+        "duration": 2,
+        "opacity": 8,
+        "size": 3
+      },
+      "connect": {
+        "distance": 5,
+        "links": {
+          "opacity": 0.8
+        },
+        "radius": 300
+      },
+      "grab": {
+        "distance": 50,
+        "links": {
+          "opacity": 0.8
+        }
+      },
+      "push": {
+        "quantity": 4
+      },
+      "remove": {
+        "quantity": 2
+      },
+      "repulse": {
+        "distance": 20,
+        "duration": 0.4
+      },
+      "slow": {
+        "active": true,
+        "radius": 0,
+        "factor": 1
+      }
+    }
+  },
+  "particles": {
+    "color": {
+      "value": "#36b7ff"
+    },
+    "links": {
+      "blink": false,
+      "color": "random",
+      "consent": false,
+      "distance": 10,
+      "enable": true,
+      "opacity": 0.8,
+      "width": 0.8
+    },
+    "move": {
+      "enable": true,
+      "outModes": "bounce",
+      "speed": 1.25,
+      "trail": true
+    },
+    "number": {
+      "value": 150
+    },
+    "opacity": {
+      "animation": {
+        "enable": true,
+        "speed": 0.25,
+        "sync": true
+      },
+      "value": {
+        "min": 0.05,
+        "max": 0.4
+      }
+    },
+    "shape": {
+      "type": "circle"
+    },
+    "size": {
+      "value": 1
+    }
+  },
+  "polygon": {
+    "draw": {
+      "enable": true,
+      "stroke": {
+        "color": "#fff",
+        "width": 0.5,
+        "opacity": 1
+      }
+    },
+    "enable": true,
+    "move": {
+      "radius": 10
+    },
+    "position": {
+      "x": 25,
+      "y": 10
+    },
+    "inline": {
+      "arrangement": "equidistant"
+    },
+    "scale": 1.25,
+    "type": "inside",
+    "url": "./jw.icon.svg"
+  }
+}
