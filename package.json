@@ -2,10 +2,6 @@
   "type": "module",
   "dependencies": {
     "@tsparticles/all": "^3.4.0",
-    "vite": "^5.2.11"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-basic-ssl": "^1.1.0",
-    "vite-plugin-mkcert": "^1.17.5"
+    "vite": "^6.2.0"
   }
 }
