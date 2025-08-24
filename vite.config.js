@@ -16,4 +16,7 @@ export default {
     host: true,
     open: true,
   },
+  worker: {
+    format: 'es',
+  },
 };
