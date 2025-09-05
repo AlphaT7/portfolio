@@ -18,11 +18,6 @@ onmessage = async (e) => {
 
             break;
 
-        case "pointerdown":
-            animationObjects.particles.pointer.x = e.data.pointer.x;
-            animationObjects.particles.pointer.y = e.data.pointer.y;
-            break;
-
         default:
             console.log("Unknown message type:", e.data.type);
             break;
