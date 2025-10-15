@@ -123,6 +123,7 @@ main {
     top: 30px;
     color: #fff;
     position: absolute;
+    z-index: 1;
   }
 
   section#knowledgeBase {
