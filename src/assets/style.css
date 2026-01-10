@@ -17,7 +17,6 @@ body {
 header,
 main,
 footer,
-section,
 div {
   box-sizing: border-box;
 }
@@ -51,7 +50,7 @@ header {
     text-align: right;
   }
 
-  section {
+  div#img {
     margin: 25px auto;
     width: 100%;
     max-width: var(--doc_width);
@@ -61,7 +60,7 @@ header {
       position: absolute;
       width: 90%;
       height: auto;
-      top: -20px;
+      top: -10px;
       left: 10px;
       z-index: 1;
     }
@@ -94,7 +93,7 @@ main {
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
 
-  section#bio {
+  div#bio {
     margin-top: 85%;
     border-right: 1px solid #57b1d3;
     padding: 15px;
@@ -115,7 +114,7 @@ main {
     }
   }
 
-  section#desktopContact {
+  div#desktopContact {
     background: transparent;
     padding: 5px;
     text-align: right;
@@ -126,7 +125,7 @@ main {
     z-index: 1;
   }
 
-  section#knowledgeBase {
+  div#knowledgeBase {
     --panel-background: linear-gradient(
       150deg,
       rgba(17, 21, 22, 0) 11%,
@@ -156,7 +155,7 @@ main {
     }
   }
 
-  section#knowledgeBase::before {
+  div#knowledgeBase::before {
     border-bottom: 3px solid var(--panel-border);
     border-left: 3px solid var(--panel-border);
     content: "";
@@ -171,7 +170,7 @@ main {
     box-shadow: -2px 3px 8px -2px rgba(0, 0, 0, 0.75);
   }
 
-  section#codeExamples {
+  div#codeExamples {
     grid-column: span 2;
     display: flex;
     flex-direction: column;
@@ -197,7 +196,7 @@ main {
     }
   }
 
-  section#aboutMe {
+  div#aboutMe {
     grid-column: span 2;
     display: flex;
     flex-direction: column;
@@ -231,7 +230,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
 
-  section {
+  > div {
     padding: 15px;
     border-top: 1px solid #fff;
     width: 300px;
@@ -325,7 +324,7 @@ footer {
     );
   }
 
-  main section#bio {
+  main div#bio {
     margin-top: 30%;
     border-top: 1px solid #57b1d3;
     border-right: none;
@@ -335,15 +334,15 @@ footer {
     }
   }
 
-  main section#desktopContact {
+  main div#desktopContact {
     display: none;
   }
 
-  main section#codeExamples fieldset {
+  main div#codeExamples fieldset {
     display: inline;
   }
 
-  header section div#mobileBio {
+  header div#img div#mobileBio {
     z-index: 1;
     display: block;
   }
@@ -352,20 +351,20 @@ footer {
     display: block;
   }
 
-  header section img {
+  header div img {
     top: -10px;
   }
 
   footer {
     flex-direction: column;
 
-    section {
+    > div {
       display: block;
       width: 100%;
       height: 175px;
     }
 
-    section#svgParticles {
+    div#svgParticles {
       padding-top: 35px;
       display: flex;
     }
