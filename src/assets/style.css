@@ -98,6 +98,7 @@ main {
     border-right: 1px solid #57b1d3;
     padding: 15px;
     color: #fff;
+    z-index: 999;
 
     fieldset {
       border-left: none;
@@ -132,7 +133,7 @@ main {
       rgba(87, 177, 211, 0.7) 100%
     );
     --panel-border: rgba(87, 177, 211, 1);
-
+    z-index: 999;
     margin-top: 10%;
     grid-row: span 2;
     border: 1px solid #fff;
@@ -152,6 +153,37 @@ main {
       border-left: none;
       border-right: none;
       border-bottom: none;
+    }
+
+    fieldset {
+      position: relative;
+      text-shadow: 0 0 5px #000;
+      transition:
+        color 0.75s ease,
+        filter 0.75s ease;
+
+      &::before {
+        background: rgba(255, 255, 255, 0);
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        border: 1px solid rgba(255, 255, 255, 0);
+        border-right-color: transparent;
+        border-left-color: transparent;
+
+        transition:
+          background 0.5s ease,
+          border-color 0.5s ease;
+      }
+
+      &:hover::before {
+        animation: flicker 0.27s ease-in forwards;
+      }
     }
   }
 
@@ -208,6 +240,10 @@ main {
       border-left: none;
       border-right: none;
       border-bottom: none;
+
+      legend {
+        font-size: 24px;
+      }
     }
   }
 }
@@ -296,6 +332,57 @@ footer {
   margin-left: 3px;
   border-right: 0.2em solid #fff;
   animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes flicker {
+  0% {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: transparent;
+    border-left-color: transparent;
+    background: rgba(255, 255, 255, 0);
+  }
+  10% {
+    border-color: rgba(255, 255, 255, 0.14);
+    border-right-color: transparent;
+    border-left-color: transparent;
+    background: rgba(255, 255, 255, 0.048);
+  }
+  15% {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: transparent;
+    border-left-color: transparent;
+    background: rgba(255, 255, 255, 0);
+  }
+  20% {
+    border-color: rgba(255, 255, 255, 0.2);
+    border-right-color: transparent;
+    border-left-color: transparent;
+    background: rgba(255, 255, 255, 0.042);
+  }
+  25% {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: transparent;
+    border-left-color: transparent;
+    background: rgba(255, 255, 255, 0);
+  }
+  30% {
+    border-color: rgba(255, 255, 255, 0.22);
+    border-right-color: transparent;
+    border-left-color: transparent;
+    background: rgba(255, 255, 255, 0.065);
+  }
+  35% {
+    border-color: rgba(255, 255, 255, 0.11);
+    border-right-color: transparent;
+    border-left-color: transparent;
+    background: rgba(255, 255, 255, 0.028);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.25);
+    border-right-color: transparent;
+    border-left-color: transparent;
+    background: rgba(255, 255, 255, 0.05);
+  }
 }
 
 @keyframes blink-caret {
